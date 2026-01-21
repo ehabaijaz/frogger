@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dfq2iqhuccltx"]
+[gd_scene load_steps=5 format=3 uid="uid://dfq2iqhuccltx"]
 
 [ext_resource type="Texture2D" uid="uid://doghmovcgeltw" path="res://graphics/map.png" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bx2rg78cu21y2" path="res://scenes/tree.tscn" id="2_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://dghd7rii024ea" path="res://scenes/player.tscn" id="2_lnu2h"]
-[ext_resource type="PackedScene" uid="uid://c74s4fvhlodb5" path="res://scenes/box.tscn" id="4_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://blxai15764l8j" path="res://scenes/tree2.tscn" id="5_iywne"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnu2h"]
+size = Vector2(690, 20)
 
 [node name="Game" type="Node2D"]
 
@@ -16,9 +17,32 @@ texture = ExtResource("1_yqjtg")
 position = Vector2(29, 37)
 
 [node name="Tree" parent="." instance=ExtResource("2_lbhrr")]
-position = Vector2(-35, 225)
+position = Vector2(-34, 220)
 
-[node name="Box" parent="." instance=ExtResource("4_lbhrr")]
+[node name="MapCollisions" type="Node2D" parent="."]
 
-[node name="Tree2" parent="." instance=ExtResource("5_iywne")]
-position = Vector2(166, 230)
+[node name="StaticBody2D" type="StaticBody2D" parent="MapCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapCollisions/StaticBody2D"]
+position = Vector2(-1, -337)
+shape = SubResource("RectangleShape2D_lnu2h")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="MapCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapCollisions/StaticBody2D2"]
+position = Vector2(-1, 324)
+shape = SubResource("RectangleShape2D_lnu2h")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="MapCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapCollisions/StaticBody2D3"]
+position = Vector2(-202, 1)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_lnu2h")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="MapCollisions"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MapCollisions/StaticBody2D4"]
+position = Vector2(203, 2)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_lnu2h")
