@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfq2iqhuccltx"]
+
+[ext_resource type="Texture2D" uid="uid://doghmovcgeltw" path="res://graphics/map.png" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://bx2rg78cu21y2" path="res://scenes/tree.tscn" id="2_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://dghd7rii024ea" path="res://scenes/player.tscn" id="2_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://c74s4fvhlodb5" path="res://scenes/box.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://blxai15764l8j" path="res://scenes/tree2.tscn" id="5_iywne"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -6)
+texture = ExtResource("1_yqjtg")
+
+[node name="Player" parent="." instance=ExtResource("2_lnu2h")]
+position = Vector2(29, 37)
+
+[node name="Tree" parent="." instance=ExtResource("2_lbhrr")]
+position = Vector2(-35, 225)
+
+[node name="Box" parent="." instance=ExtResource("4_lbhrr")]
+
+[node name="Tree2" parent="." instance=ExtResource("5_iywne")]
+position = Vector2(166, 230)
