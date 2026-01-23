@@ -6,5 +6,21 @@ var speed : int = 200
 func _physics_process(delta):
 	direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
+	animation()
 	move_and_slide()
+
+func animation():
+	if direction:
+		$AnimatedSprite2D.flip_h = direction.x > 0 
+		if direction.x != 0:
+			$AnimatedSprite2D.animation = 'left'
+		else:
+			if direction.y < 0:
+				$AnimatedSprite2D.animation = 'up'
+			if direction.y > 0:
+				$AnimatedSprite2D.animation = 'down'
+	else:
+		$AnimatedSprite2D.frame = 0
+	
+		
 	
