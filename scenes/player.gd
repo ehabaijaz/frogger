@@ -15,10 +15,7 @@ func animation():
 		if direction.x != 0:
 			$AnimatedSprite2D.animation = 'left'
 		else:
-			if direction.y < 0:
-				$AnimatedSprite2D.animation = 'up'
-			if direction.y > 0:
-				$AnimatedSprite2D.animation = 'down'
+			$AnimatedSprite2D.animation = 'up' if direction.y < 0 else 'down'
 	else:
 		$AnimatedSprite2D.frame = 0
 	
