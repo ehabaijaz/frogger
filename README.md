@@ -1,9 +1,4 @@
 <a id="readme-top"></a>
-
-
-<h1> Features </h1>
-<p> This is a frogger-inspired game where the player must reach home as fast as possible and avoid getting hit by the cars. </p>
-<p> The average time to reach home is 18. Can you beat it? </p>
 <!-- SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -12,6 +7,12 @@
 [![MIT License][license-shield]][license-url]
 
 <!-- HEADER -->
+<br />
+
+<h1> Features </h1>
+<p> This is a frogger-inspired game where the player must reach home as fast as possible and avoid getting hit by the cars. </p>
+<p> The average time to reach home is 18. Can you beat it? </p>
+
 <br />
 <div align="center">
     <a href="https://github.com/BudzioT/Godot_Super-Wakatime">
