@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dghd7rii024ea"]
+[gd_scene format=3 uid="uid://dghd7rii024ea"]
 
 [ext_resource type="Script" uid="uid://d3diycmbiqi3w" path="res://scenes/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://c4q6c7mxqh78h" path="res://graphics/player/player_tileset.png" id="2_g2els"]
@@ -96,24 +96,24 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=3454953]
 collision_layer = 2
 collision_mask = 13
 script = ExtResource("1_g2els")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1687146677]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_g2els")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=532931677]
 zoom = Vector2(4, 4)
 limit_left = -192
-limit_top = -320
+limit_top = -1600
 limit_right = 192
 limit_bottom = 320
 position_smoothing_enabled = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1484480986]
 sprite_frames = SubResource("SpriteFrames_tuyoq")
 animation = &"down"
 autoplay = "left"
