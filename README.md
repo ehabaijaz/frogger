@@ -27,4 +27,24 @@
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
 
+
+[contributors-shield]: https://img.shields.io/github/contributors/budziot/Godot_Super-Wakatime?style=for-the-badge
+[contributors-url]: https://github.com/BudzioT/Godot_Super-Wakatime/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/budziot/Godot_Super-Wakatime?style=for-the-badge
+[forks-url]: https://github.com/BudzioT/Godot_Super-Wakatime/forks
+[stars-shield]: https://img.shields.io/github/stars/budziot/Godot_Super-Wakatime?style=for-the-badge
+[stars-url]: https://github.com/BudzioT/Godot_Super-Wakatime/stargazers
+[issues-shield]: https://img.shields.io/github/issues/budziot/Godot_Super-Wakatime?style=for-the-badge
+[issues-url]: https://github.com/BudzioT/Godot_Super-Wakatime/issues
+[license-shield]: https://img.shields.io/github/license/budziot/Godot_Super-Wakatime?style=for-the-badge
+[license-url]: https://github.com/BudzioT/Godot_Super-Wakatime/blob/master/addons/godot_super-wakatime/LICENSE
+[product-screenshot]: https://cloud-j4wibbzz7-hack-club-bot.vercel.app/0image.png
+[product-logo]: https://cloud-j4wibbzz7-hack-club-bot.vercel.app/2godotwaka2.png
+[Godot]: https://img.shields.io/badge/Godot%20Engine-478CBF?logo=godotengine&logoColor=fff&style=flat
+[Godot-url]: https://godotengine.org/
+[Ouch-shield]: https://img.shields.io/badge/Ouch!-tool-blue?label=Ouch!
+[Ouch-url]: https://github.com/ouch-org/ouch
+[time-screenshot]: https://cloud-l88kldf50-hack-club-bot.vercel.app/0image.png
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
